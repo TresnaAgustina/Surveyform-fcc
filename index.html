@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill Out the Survey Form Completely</p>
+    <form action="#" id="survey-form">
+      <!-- nama -->
+      <label for="nim" id="name-label"
+        >Name
+        <input name="name" type="text" id="name" placeholder="Name" required />
+      </label>
+      <!-- end nama -->
+
+      <!-- email -->
+      <label id="email-label"
+        >Email
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <!-- end email -->
+
+      <!-- age -->
+      <label id="number-label"
+        >Age
+        <input
+          min="17"
+          max="40"
+          name="age"
+          type="number"
+          id="number"
+          placeholder="Age"
+          required
+        />
+      </label>
+      <!-- end age -->
+
+      <!-- dropdown -->
+      <div class="group">
+        <label>Where do you come from?</label>
+        <select name="" id="dropdown">
+          <option disabled selected value>Select Here!</option>
+          <option value="">Asia</option>
+          <option value="">Eropa</option>
+          <option value="">North Amerika</option>
+          <option value="">Afrika</option>
+        </select>
+      </div>
+      <!-- end dropdown -->
+
+      <!-- radio button -->
+      <div class="form-group">
+        <p id="radio">how often do you listen to music?</p>
+        <label id="radio-label"
+          >very often
+          <input
+            name="user-recommend"
+            value="very often"
+            type="radio"
+            class="input-radio"
+            checked
+        /></label>
+        <label
+          >rarely
+          <input
+            name="user-recommend"
+            value="rarely"
+            type="radio"
+            class="input-radio"
+        /></label>
+
+        <label
+          >Never
+          <input
+            name="user-recommend"
+            value="rarely"
+            type="radio"
+            class="input-radio"
+          />
+        </label>
+      </div>
+      <!-- end radio button -->
+      <label for="albums" id="albums-label">
+        Please choose your favorite album(s)?
+      </label>
+
+      <input type="checkbox" value="cry-for-me" /> Cry For Me <br />
+      <input type="checkbox" value="eyes-wide-open" /> Eyes Wide Open <br />
+      <input type="checkbox" value="more-and-more" /> More and More <br />
+      <input type="checkbox" value="feel-special" /> Feel Special <br />
+
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+
+      <button id="submit" value="submit" name="daftar" type="submit">
+        Submit
+      </button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
